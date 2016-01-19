@@ -135,8 +135,8 @@ public class MyScrollView extends ScrollView {
 	public boolean isNeedMove() {
 		int offset = inner.getMeasuredHeight() - getHeight();
 		int scrollY = getScrollY();
-//		Log.e("jj", "scrolly=" + scrollY);
-		Log.d("mytag", "MeasuredHeight:"+inner.getMeasuredHeight()+"  getHeight:"+getHeight());
+		Log.e("mytag", "scrolly=" + scrollY);
+		Log.d("mytag", "scrollY == offset:"+(scrollY == offset));
 		// 0是顶部，后面那个是底部
 		if (scrollY == 0 || scrollY == offset) {
 			return true;
